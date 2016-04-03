@@ -7,10 +7,12 @@ using namespace std;
 
 int main()
 {
-	Sudoku ss;
-	
-	ss.giveQuestion();
+	cout<<"本程式會測試giveQuestion，readIn，changeNum，changeRow，changeCol，rotate，flip的功能"<<endl;
 
+	Sudoku ss;
+	cout<<"下列打印giveQuestion所給預設的題目"<<endl;
+	ss.giveQuestion();
+	cout<<"請輸入你想給的題目(可以複製上面的做測試)"<<endl;
 	ss.readIn();
 	
 	int numA,numB;
@@ -44,7 +46,6 @@ int main()
 	cin>>numA;
 	ss.flip(numA);
 	ss.printSudokuBoard();
-	//ss.solve();
 	
 	return 0;
 }

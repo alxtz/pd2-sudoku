@@ -8,11 +8,12 @@ using namespace std;
 int main()
 {
 	Sudoku ss;
-	
-	//ss.readIn();
-	//ss.printSudokuBoard();
-	//
-	//ss.solve();
+	cout<<"請輸入你想給的題目"<<endl;
+	ss.readIn();	
+
+	ss.solve();
+
+	//printSudokuBoard();
 	
 	return 0;
 }
